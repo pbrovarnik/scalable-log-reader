@@ -61,4 +61,4 @@ function runSolutions(sourceCount) {
 }
 
 // Adjust this input to see how your solutions perform under various loads.
-runSolutions(10).catch((e) => console.error('Error:', e));
+runSolutions(100).catch((e) => console.error('Error:', e));
