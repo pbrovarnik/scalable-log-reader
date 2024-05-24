@@ -1,3 +1,7 @@
+Problem: Sorting logs 🕒 chronologically 🕒 from multiple sources, both in Synchronous and Asynchronous manner. Addressing the problem of storing logs in memory if a source contains millions of entries and can be exabytes in size.
+
+Solution: Use of a min-heap for sorting, reading logs once-at-a-time, and the asynchronous solution, since there’s a “flight time” a buffer is used.
+
 ## Instructions
 
 We have a number of [**log sources**](https://github.com/sesolabor/coding-challenge/blob/master/lib/log-source.js). Each log source contains N log entries. Each entry is a javascript object with a timestamp and message. We don't know the number of log entries each source contains - however - we do know that the entries within each source are sorted 🕒 **chronologically** 🕒.
